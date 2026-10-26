@@ -1,0 +1,16 @@
+{
+  "name": "sibianxuetang",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "思辨学堂：基于多智能体协同的批判性思维陪伴式学习平台",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node six-arts-web/server.mjs",
+    "test": "npm --prefix six-arts-web run test:code",
+    "test:full": "npm --prefix six-arts-web test",
+    "demo": "node demo-access/start-demo.mjs"
+  }
+}

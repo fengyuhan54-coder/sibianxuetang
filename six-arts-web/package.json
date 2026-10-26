@@ -1,0 +1,15 @@
+{
+  "name": "six-arts-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "思辨学堂网页端",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "test:code": "node --test --test-skip-pattern=\"course references point to the supplied files|local textbook supports byte ranges\""
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

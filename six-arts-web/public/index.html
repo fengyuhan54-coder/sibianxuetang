@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>思辨学堂 · 让思考有迹可循</title><meta name="description" content="用追问、辨析与对话，练习批判性思维。"><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/training.css"><link rel="stylesheet" href="/studio.css"><link rel="stylesheet" href="/course-welcome.css"></head>
+<body>
+ <aside class="sidebar" id="sidebar">
+  <a class="brand" href="#" aria-label="思辨学堂首页"><span class="brand-mark" aria-hidden="true"><span class="platform-logo"></span></span><span>思辨学堂<small>THE ART OF THINKING</small></span></a>
+  <button class="new-chat" id="new-chat"><span>＋</span> 开启新对话 <span class="shortcut">↗</span></button>
+  <div class="nav-caption">我的空间</div>
+  <nav class="main-nav"><button data-agent="coach" id="coach-home" class="selected"><span class="mentor-portrait" data-mentor="coach" aria-hidden="true">◈</span> 思维教练 <b>主工作台</b></button><button data-view="history"><span>◷</span> 对话历史 <b id="history-count">0</b></button><button data-view="profile"><span>▥</span> 学习记录</button><button id="sidebar-notes"><span>▤</span> 学习笔记</button></nav>
+  <div class="nav-caption agents-caption">六艺伙伴 <span>6 个思考视角</span></div><nav id="agents-nav" class="agents-nav"></nav>
+  <div class="sidebar-bottom"><button id="settings-button"><span>⚙</span><span>模型设置<small id="sidebar-model">尚未连接模型</small></span><i class="status-dot"></i></button><div class="local-caption">记录保存在当前浏览器</div></div>
+ </aside>
+ <div class="mobile-overlay" id="mobile-overlay" hidden></div>
+ <main class="main">
+  <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" id="menu-toggle" aria-label="打开导航">☰</button><span>思辨学堂</span><span class="slash">/</span><strong id="page-name">思辨工作台</strong></div><div class="top-actions"><button type="button" id="course-welcome-open" aria-label="查看课程介绍"><span aria-hidden="true">▤</span> 课程介绍</button><span class="model-status" id="model-status">○ 模型待连接</span><button class="avatar" id="profile-shortcut" title="学习记录" aria-label="学习记录"><span class="platform-logo" aria-hidden="true"></span></button></div></header>
+  <section id="chat-view" class="view chat-layout" data-role-theme="coach">
+   <div class="role-atmosphere" aria-hidden="true"><div class="scene-panel scene-coach"></div><div class="scene-panel scene-socratic"></div><div class="scene-panel scene-fallacy"></div><div class="scene-panel scene-perspectives"></div><div class="scene-panel scene-argument"></div><div class="scene-panel scene-planner"></div><div class="scene-panel scene-concept"></div></div>
+   <div class="chat-column">
+    <div class="conversation-top"><div class="active-mentor"><span id="active-symbol" class="mini-symbol mentor-portrait" data-mentor="coach" aria-hidden="true">◈</span><div class="active-mentor-title"><div><strong id="active-name">思维教练</strong><span class="role-pill" id="active-tag">综合引导</span></div><small class="mentor-course-label">批判性思维 · <span id="mentor-focus">六艺协同 · 陪伴式学习</span></small></div></div><div class="conversation-actions"><span class="mentor-presence" id="mentor-presence" role="status">我在听，慢慢想。</span><button class="text-button" id="export-chat" title="导出当前对话">↓ 导出</button><button class="icon-button" id="clear-chat" title="清空当前对话" aria-label="清空当前对话">⌫</button></div></div>
+    <section class="training-toolbar" id="training-toolbar" aria-label="训练进度"><div class="training-topline"><div class="mode-switch" id="mode-switch"><button data-mode="free" class="active">自由问答</button><button data-mode="systematic">系统训练</button></div><span id="training-phase">结合问题与上下文，选择合适的伙伴</span></div><div id="training-track" class="training-track"></div><div id="training-actions" class="training-actions"></div></section>
+    <div class="message-scroll" id="message-scroll">
+     <div class="welcome" id="welcome">
+      <section class="mentor-hero" aria-label="思辨导师与课程学习方向">
+       <div class="mentor-copy"><div class="eyebrow"><span></span> 思辨学堂 · THE ART OF THINKING</div><div class="hero-symbol" id="hero-symbol" aria-hidden="true">◈</div><div class="mentor-course">批判性思维 <span id="mentor-ability">六艺协同 · 陪伴式学习</span></div><h1 id="welcome-title">一个问题，<br>六种思考路径。</h1><p id="welcome-desc">在主工作台自由提问，或开启一个议题的系统训练。</p><div class="mentor-path" id="mentor-path" aria-label="本角色学习方向"></div></div>
+       <div class="mentor-figure" aria-hidden="true"><div class="mentor-figure-caption"><span id="mentor-caption-name">思维教练</span><small>让每一次对话，成为思考的练习</small></div></div>
+      </section>
+      <div id="workspace-agents" class="workspace-agents" aria-label="六个独立工作台"></div><div class="starter-label">带着一个问题，开始今天的思考</div><div class="starter-grid" id="starters"></div><div class="welcome-note"><span>✧</span> 好的思考，从愿意多问一句开始。</div><section class="coach-quote" id="coach-quote" aria-label="给思考留一点空间"><div><span>给思考留一点空间</span><p>“我为什么这样认为？”</p></div><div><p>有时候，比“答案是什么”<br>更值得停下来想一想。</p><small>THINK A LITTLE DEEPER ↗</small></div></section>
+     </div>
+     <div class="messages" id="messages" aria-live="polite"></div>
+    </div>
+    <div class="composer-area"><div class="connection-notice" id="connection-notice"><span>◌</span> 连接一个大模型，让六艺伙伴开始回应。<button id="configure-inline">去配置 ↗</button></div><div class="composer"><textarea id="message-input" rows="2" maxlength="12000" placeholder="写下你的问题、观点，或一段想要分析的文字…" aria-label="输入对话内容"></textarea><div class="composer-bottom"><div class="composer-tools"><button id="map-button" class="tool-button" title="分析最近一条用户文字并生成结构图">⌘ <span>生成结构图</span></button><span id="char-count">0 / 12000</span></div><button id="send-button" class="send-button" aria-label="发送消息">↑</button></div></div><p class="composer-hint">Enter 发送 · Shift + Enter 换行 <span>AI 的分析可供参考，判断仍由你完成。</span></p></div>
+   </div>
+  </section>
+  <section id="history-view" class="view content-view" hidden><div class="section-kicker">YOUR CONVERSATIONS</div><h1>每一次追问，都有迹可循。</h1><p class="section-subtitle">继续之前的思考，或者开始一个新的问题。</p><div class="history-tools"><input id="history-search" type="search" placeholder="搜索对话内容或伙伴名称" aria-label="搜索历史"><button id="export-all" class="secondary-button">导出全部记录</button></div><div id="history-list"></div></section>
+  <section id="profile-view" class="view content-view" hidden><div class="section-kicker">YOUR THINKING JOURNEY</div><h1>留意自己的思考足迹。</h1><p class="section-subtitle">这里记录参与情况，帮助你回顾练习习惯。</p><div id="stats" class="stats-grid"></div><div class="profile-grid"><section class="profile-card"><h2>和哪些伙伴聊得最多</h2><div id="rank-list"></div></section><section class="profile-card"><h2>最近的思考片段</h2><div id="recent-topics"></div></section></div><div class="data-actions"><p>记录仅在当前浏览器保存。清理浏览器数据会删除记录，建议定期导出。</p><button id="delete-all" class="danger-button">清除全部学习数据</button></div></section>
+ </main>
+ <dialog id="settings-dialog"><form id="settings-form"><div class="dialog-heading"><div><div class="section-kicker">MODEL CONNECTION</div><h2>连接你的大模型</h2></div><button type="button" class="icon-button close-dialog" aria-label="关闭">×</button></div><p class="dialog-description">六位伙伴共用一个文本模型，各自按不同的规则对话。密钥仅存于本机服务内存，关闭服务后需重新填写。</p><label>服务商<select id="provider"><option value="qwen">通义千问 · 推荐</option><option value="deepseek">DeepSeek</option><option value="custom">自定义 OpenAI 兼容接口</option></select></label><label>接口地址<input id="base-url" type="url" required value="https://dashscope.aliyuncs.com/compatible-mode/v1"></label><label>模型名称<input id="model-name" required value="qwen-plus"></label><label>API Key<input id="api-key" type="password" autocomplete="off" placeholder="填写新密钥；留空保留已配置密钥"></label><p class="field-hint">百炼请使用对应地域的接口与密钥；模型名称可按控制台调整。对话和学习笔记会发送给所配置的模型服务。</p><div id="settings-result" class="form-result" role="status"></div><div class="dialog-actions"><button type="button" class="text-button" id="disconnect">断开连接</button><button type="button" class="secondary-button" id="test-model">保存并测试</button><button class="primary-button" type="submit">保存配置</button></div></form></dialog>
+ <dialog id="map-dialog" class="wide-dialog"><div class="dialog-heading"><div><div class="section-kicker">THINKING MAP</div><h2 id="map-title">把思考的结构展开</h2></div><button class="icon-button close-dialog" aria-label="关闭">×</button></div><p class="dialog-description" id="map-description">基于最近一条用户输入生成。结构由 AI 提取，事实与支持关系仍需你核验。</p><div id="map-content"></div><div class="dialog-actions"><button class="secondary-button" id="download-map">导出结构 JSON</button><button class="primary-button close-dialog">返回对话</button></div></dialog>
+ <dialog id="notes-dialog"><div class="dialog-heading"><div><div class="section-kicker">SHARED NOTES</div><h2>把想法带到下一段对话</h2></div><button class="icon-button close-dialog" aria-label="关闭">×</button></div><p class="dialog-description">写下议题、已有结论或尚未解决的问题。每次对话会把这些笔记作为背景发送给模型，不会自动共享其他角色的完整聊天。</p><textarea id="shared-notes" maxlength="5000" rows="9" placeholder="例如：我正在讨论 AI 与独立思考的关系，目前发现要区分直接复制答案和主动寻找反例两种用法。"></textarea><div class="dialog-actions"><button class="primary-button" id="save-notes">保存笔记</button></div></dialog>
+ <dialog id="confirm-dialog"><h2 id="confirm-title">确认操作</h2><p id="confirm-description"></p><div class="dialog-actions"><button class="secondary-button" id="confirm-cancel">取消</button><button class="danger-button" id="confirm-ok">确认清除</button></div></dialog>
+ <dialog id="course-welcome" aria-labelledby="course-welcome-title" aria-describedby="course-welcome-description">
+  <article class="course-shell">
+   <button type="button" id="course-welcome-close" aria-label="关闭课程介绍">×</button>
+   <div class="course-eyebrow"><span class="course-spark" aria-hidden="true">✧</span> 思辨学堂 · 从好奇开始，让思考更清晰</div>
+   <div class="course-intro-grid">
+    <div class="course-copy">
+     <div class="course-title-block"><p class="course-overline">推荐课程</p><h1 id="course-welcome-title">批判性思维</h1></div>
+     <p class="course-lead" id="course-welcome-description">通过这门课，你将学会<strong>理性分析与独立判断</strong>，掌握清晰梳理观点、辨别信息真伪、避开逻辑陷阱的能力，既能读懂文字背后的逻辑，也能严谨有力地表达自己的想法，摆脱盲从与片面思考，在学习、工作和生活中做出更清醒、更可靠的判断与决策。</p>
+     <ul class="course-abilities" aria-label="课程学习方向">
+      <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8" cy="8" r="5"/><path d="m12 12 5 5M5 8h6M8 5v6"/></svg>理性分析</li>
+      <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 2 7 4v6l-7 6-7-6V6ZM6 10l3 3 5-6"/></svg>独立判断</li>
+      <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 4h14v10H8l-4 3v-3H3ZM6 8h8M6 11h5"/></svg>清晰表达</li>
+     </ul>
+    </div>
+    <div class="course-art">
+     <svg viewBox="0 0 280 300" role="img" aria-label="一本批判性思维书籍与相连的观点节点">
+      <defs><linearGradient id="course-book-cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#385778"/><stop offset="1" stop-color="#1c314e"/></linearGradient><linearGradient id="course-book-pages" x1="0" x2="1"><stop stop-color="#e4dcc0"/><stop offset="1" stop-color="#faf5df"/></linearGradient></defs>
+      <circle cx="142" cy="139" r="111" fill="none" stroke="#d3ddc5" stroke-dasharray="2 7"/>
+      <path d="M38 78h35M206 59h28v42h17M29 189h27M225 192h29v35h-23" fill="none" stroke="#a4b997" stroke-width="1.5"/>
+      <g fill="#faf9f2" stroke="#9fb490"><circle cx="36" cy="78" r="5"/><circle cx="251" cy="102" r="5"/><circle cx="26" cy="189" r="5"/><circle cx="231" cy="227" r="5"/></g>
+      <path d="M69 46q0-10 12-10h133q10 0 10 10v206H81q-12 0-12-12Z" fill="#142840"/>
+      <rect x="79" y="36" width="145" height="207" rx="7" fill="url(#course-book-cover)"/>
+      <path d="M81 243h143v12H81q-10 0-10-6t10-6" fill="url(#course-book-pages)"/>
+      <path d="M85 247h133M85 251h133" stroke="#cfcaad" stroke-width=".8"/>
+      <rect x="95" y="54" width="112" height="169" rx="3" fill="none" stroke="#d1bd8180"/>
+      <text x="151" y="131" text-anchor="middle" fill="#f6f3e2" font-size="27" font-family="serif" letter-spacing="3">批判性</text>
+      <text x="151" y="165" text-anchor="middle" fill="#f6f3e2" font-size="27" font-family="serif" letter-spacing="6">思维</text>
+      <g fill="none" stroke="#cbb777" stroke-width="1.3"><path d="M122 192h57M133 185v14M168 185v14"/><circle cx="122" cy="192" r="4" fill="#304c6c"/><circle cx="151" cy="192" r="4" fill="#304c6c"/><circle cx="179" cy="192" r="4" fill="#304c6c"/></g>
+      <path d="m198 36 0 35 9-6 9 6V36" fill="#c8b17c"/>
+      <g fill="#a58b59"><path d="M42 133v10m-5-5h10M244 151v8m-4-4h8" stroke="#a58b59"/><circle cx="53" cy="239" r="2.5"/></g>
+     </svg>
+     <div class="course-art-caption">梳理观点 · 检验理由 · 形成判断</div>
+    </div>
+   </div>
+   <section class="course-invitation" aria-label="适合谁学习">
+    <span class="course-quote-mark" aria-hidden="true">“</span>
+    <p>只要你对世界充满好奇，希望摆脱偏见和盲从，建立自己独立的认识和判断，这门课程就适合你。<br>在信息爆炸的时代，它帮助你更明智地决策，更清晰地生活，成为一个<strong>精神独立、内心丰盈的“完整的人”</strong>。</p>
+   </section>
+   <footer class="course-footer">
+    <div class="course-destination"><span>课程链接 · 学银在线</span>xueyinonline.com/detail/249757906</div>
+    <div class="course-actions"><a class="course-link" href="https://xueyinonline.com/detail/249757906" target="_blank" rel="noopener noreferrer">查看课程 <span aria-hidden="true">↗</span></a><button type="button" id="course-welcome-enter">进入思辨学堂 →</button></div>
+   </footer>
+  </article>
+ </dialog>
+ <div id="toast" class="toast" role="status" hidden></div>
+ <script type="module" src="/app.js"></script>
+ <script type="module" src="/course-welcome.js"></script>
+</body></html>

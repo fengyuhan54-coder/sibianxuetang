@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="2220" viewBox="0 0 3000 2220">
+<rect width="100%" height="100%" fill="white"/>
+<text x="70.00" y="104.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="64" font-weight="700" fill="#243B58">思辨学堂｜作品总体方案</text>
+<text x="73.00" y="168.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="400" fill="#617181">面向《批判性思维》课程的多智能体陪伴式学习平台 · 网页端</text>
+<text x="2606.00" y="107.04" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#A57B3F">系统架构 × 交互闭环</text>
+<polyline points="2650,500 2650,245 310,245 310,340" fill="none" stroke="#A57B3F" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="310.00,340.00 318.00,323.00 302.00,323.00" fill="#A57B3F"/>
+<rect x="1147.0" y="216" width="686.0" height="51" rx="6" fill="white" stroke="white" stroke-width="1"/>
+<text x="1162.00" y="252.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#A57B3F">持续学习：用户回应 → 继续训练 → 复盘与调整</text>
+<rect x="70" y="340" width="490" height="970" rx="22" fill="#F5F7FA" stroke="#CAD3DD" stroke-width="2"/>
+<rect x="70" y="340" width="490" height="96" rx="22" fill="#243B58" stroke="#243B58" stroke-width="2"/>
+<text x="105.00" y="402.56" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="37" font-weight="700" fill="white">01  用户输入与交互</text>
+<text x="108.00" y="507.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#243B58">学生提交</text>
+<text x="108.00" y="571.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#263746">问题 / 个人观点</text>
+<text x="108.00" y="624.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#263746">论证文本 / 概念疑问</text>
+<text x="108.00" y="677.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#263746">学习目标 / 基础与时间</text>
+<polyline points="110,738 520,738" fill="none" stroke="#CAD3DD" stroke-width="2" stroke-linejoin="round"/>
+<text x="108.00" y="812.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#243B58">网页端交互</text>
+<text x="108.00" y="877.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#263746">思维教练主工作台</text>
+<text x="108.00" y="930.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#263746">六个智能体独立工作台</text>
+<text x="108.00" y="983.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#263746">自由问答 / 系统训练</text>
+<rect x="101" y="1048" width="428" height="214" rx="16" fill="#FFFFFF" stroke="#D4DDE7" stroke-width="2"/>
+<text x="125.00" y="1098.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#243B58">随请求提供</text>
+<text x="125.00" y="1148.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#263746">当前对话与训练进度</text>
+<text x="125.00" y="1193.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#263746">复述、反驳及后续回答</text>
+<rect x="650" y="340" width="1600" height="1015" rx="26" fill="#FBFCFD" stroke="#C8D3DF" stroke-width="2"/>
+<text x="690.00" y="393.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#617181">核心教学服务 · Node.js 后端</text>
+<rect x="680" y="428" width="1540" height="193" rx="18" fill="#EAF0F7" stroke="#8DA3BC" stroke-width="2"/>
+<text x="715.00" y="488.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="39" font-weight="700" fill="#243B58">02  思维教练：意图识别与教学编排</text>
+<text x="715.00" y="544.04" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="400" fill="#263746">识别问题与上下文 → 选择伙伴 → 管理任务与训练阶段</text>
+<text x="715.00" y="594.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#617181">轮次控制 / 任务队列 / 等待用户回答 / 暂停与恢复</text>
+<polyline points="560,525 680,525" fill="none" stroke="#243B58" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="680.00,525.00 663.00,517.00 663.00,533.00" fill="#243B58"/>
+<rect x="573.0" y="458" width="84.0" height="47" rx="6" fill="white" stroke="white" stroke-width="1"/>
+<text x="588.00" y="490.76" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#617181">提交</text>
+<rect x="680" y="687" width="1540" height="440" rx="18" fill="#FFFFFF" stroke="#CDD7E1" stroke-width="2"/>
+<text x="710.00" y="739.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#243B58">六个专业智能体｜按任务调度，也可直接独立对话</text>
+<polyline points="1450,621 1450,687" fill="none" stroke="#243B58" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1450.00,687.00 1458.00,670.00 1442.00,670.00" fill="#243B58"/>
+<rect x="1354.0" y="631" width="192.0" height="47" rx="6" fill="white" stroke="white" stroke-width="1"/>
+<text x="1369.00" y="663.76" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#617181">选择当前任务</text>
+<rect x="708" y="774" width="483" height="151" rx="14" fill="#EEF2F8" stroke="#D1DAE3" stroke-width="2"/>
+<text x="731.00" y="823.68" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="36" font-weight="700" fill="#243B58">苏格拉底</text>
+<text x="731.00" y="869.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#263746">递进追问 / 概念与前提</text>
+<text x="731.00" y="909.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">五轮回答后忠实复盘</text>
+<rect x="1209" y="774" width="483" height="151" rx="14" fill="#F8EEE9" stroke="#D1DAE3" stroke-width="2"/>
+<text x="1232.00" y="823.68" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="36" font-weight="700" fill="#243B58">诡辩士</text>
+<text x="1232.00" y="869.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#263746">谬误识别 / 案例解析</text>
+<text x="1232.00" y="909.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">连续辩论 / 限时对战</text>
+<rect x="1710" y="774" width="483" height="151" rx="14" fill="#EDF3F8" stroke="#D1DAE3" stroke-width="2"/>
+<text x="1733.00" y="823.68" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="36" font-weight="700" fill="#243B58">多元洞察</text>
+<text x="1733.00" y="869.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#263746">利益相关方与价值前提</text>
+<text x="1733.00" y="909.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">换位讨论 / 多角色圆桌</text>
+<rect x="708" y="946" width="483" height="151" rx="14" fill="#F2EFF7" stroke="#D1DAE3" stroke-width="2"/>
+<text x="731.00" y="995.68" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="36" font-weight="700" fill="#243B58">论证分析</text>
+<text x="731.00" y="1041.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#263746">主张—前提—理由—结论</text>
+<text x="731.00" y="1081.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">论证导图 / 文本修改</text>
+<rect x="1209" y="946" width="483" height="151" rx="14" fill="#F8F3E8" stroke="#D1DAE3" stroke-width="2"/>
+<text x="1232.00" y="995.68" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="36" font-weight="700" fill="#243B58">知识罗盘</text>
+<text x="1232.00" y="1041.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#263746">阶段规划 / 任务与复盘</text>
+<text x="1232.00" y="1081.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">教材逐章课后题闯关</text>
+<rect x="1710" y="946" width="483" height="151" rx="14" fill="#EFF4F1" stroke="#D1DAE3" stroke-width="2"/>
+<text x="1733.00" y="995.68" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="36" font-weight="700" fill="#243B58">概念智析</text>
+<text x="1733.00" y="1041.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#263746">定义 / 辨析 / 教材定位</text>
+<text x="1733.00" y="1081.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">专项练习 / 按需隐喻配图</text>
+<polyline points="560,925 607,925 607,900 680,900" fill="none" stroke="#243B58" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="680.00,900.00 663.00,892.00 663.00,908.00" fill="#243B58"/>
+<rect x="561.0" y="991" width="82.0" height="46" rx="6" fill="white" stroke="white" stroke-width="1"/>
+<text x="576.00" y="1022.88" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#617181">直达</text>
+<rect x="680" y="1189" width="1540" height="135" rx="18" fill="#EEF2F6" stroke="#9EAFBF" stroke-width="2"/>
+<text x="713.00" y="1238.68" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="36" font-weight="700" fill="#243B58">03  教学工具与结果校验</text>
+<text x="713.00" y="1291.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#263746">结构完整性 / 用户原话依据 / 真实教材页码；失败保留进度并支持重试</text>
+<polyline points="1450,1127 1450,1189" fill="none" stroke="#243B58" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1450.00,1189.00 1458.00,1172.00 1442.00,1172.00" fill="#243B58"/>
+<rect x="2400" y="500" width="520" height="750" rx="22" fill="#FAF6EE" stroke="#C8AF80" stroke-width="2"/>
+<text x="2433.00" y="564.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="39" font-weight="700" fill="#243B58">04  学习输出</text>
+<polyline points="2433,598 2887,598" fill="none" stroke="#D9C9AA" stroke-width="2" stroke-linejoin="round"/>
+<text x="2435.00" y="665.04" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#243B58">对话与解释</text>
+<text x="2435.00" y="707.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">启发式追问 / 概念辨析</text>
+<text x="2435.00" y="781.04" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#243B58">图解与结构</text>
+<text x="2435.00" y="823.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">支持、反驳关系 / 学习路径</text>
+<text x="2435.00" y="897.04" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#243B58">任务与反馈</text>
+<text x="2435.00" y="939.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">练习评价 / 观点复盘</text>
+<text x="2435.00" y="1013.04" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#243B58">记录与画像</text>
+<text x="2435.00" y="1055.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">当前会话轨迹 / 表现反馈</text>
+<text x="2435.00" y="1129.04" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="33" font-weight="700" fill="#243B58">按需学习辅助</text>
+<text x="2435.00" y="1171.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#617181">教材出处 / 概念隐喻配图</text>
+<polyline points="2220,1257 2330,1257 2330,840 2400,840" fill="none" stroke="#243B58" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="2400.00,840.00 2383.00,832.00 2383.00,848.00" fill="#243B58"/>
+<rect x="2310.0" y="1286" width="376.0" height="48" rx="6" fill="white" stroke="white" stroke-width="1"/>
+<text x="2325.00" y="1319.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#243B58">SSE 流式正文 + 图解与反馈</text>
+<polyline points="540,1478 590,1478 590,1138 760,1138 760,1127" fill="none" stroke="#A57B3F" stroke-width="3" stroke-linejoin="round" stroke-dasharray="12 10"/>
+<polygon points="760.00,1127.00 752.00,1144.00 768.00,1144.00" fill="#A57B3F"/>
+<rect x="194.5" y="1391" width="311.0" height="48" rx="6" fill="white" stroke="white" stroke-width="1"/>
+<text x="209.50" y="1424.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#A57B3F">相关知识 / 习题与量规</text>
+<polyline points="1555,1478 1555,1403 2290,1403 2290,935 2220,935" fill="none" stroke="#A57B3F" stroke-width="3" stroke-linejoin="round" stroke-dasharray="12 10"/>
+<polygon points="2220.00,935.00 2237.00,943.00 2237.00,927.00" fill="#A57B3F"/>
+<polygon points="1555.00,1478.00 1563.00,1461.00 1547.00,1461.00" fill="#A57B3F"/>
+<rect x="1654.5" y="1376" width="311.0" height="48" rx="6" fill="white" stroke="white" stroke-width="1"/>
+<text x="1669.50" y="1409.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#A57B3F">请求 / 生成与评阅结果</text>
+<polyline points="2520,1478 2520,1370 2145,1370 2145,1324" fill="none" stroke="#A57B3F" stroke-width="3" stroke-linejoin="round" stroke-dasharray="12 10"/>
+<polygon points="2145.00,1324.00 2137.00,1341.00 2153.00,1341.00" fill="#A57B3F"/>
+<polygon points="2520.00,1478.00 2528.00,1461.00 2512.00,1461.00" fill="#A57B3F"/>
+<rect x="2513.5" y="1391" width="283.0" height="48" rx="6" fill="white" stroke="white" stroke-width="1"/>
+<text x="2528.50" y="1424.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#A57B3F">保存记录 / 更新状态</text>
+<rect x="70" y="1478" width="970" height="344" rx="19" fill="#FAF8F3" stroke="#D6C8AF" stroke-width="2"/>
+<text x="102.00" y="1536.56" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="37" font-weight="700" fill="#243B58">课程知识与任务数据</text>
+<text x="102.00" y="1594.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">教材 PDF → OCR 文本 → 分块与章节 / 页码锚定</text>
+<text x="102.00" y="1648.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">字符二元组 TF-IDF 检索 · SQLite 索引</text>
+<text x="102.00" y="1702.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">概念条目 / 八章课后习题 / 形成性评价量规</text>
+<text x="102.00" y="1756.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">教材引用重点用于概念解释，其他回答按需引用</text>
+<rect x="1090" y="1478" width="970" height="344" rx="19" fill="#FAF8F3" stroke="#D6C8AF" stroke-width="2"/>
+<text x="1122.00" y="1536.56" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="37" font-weight="700" fill="#243B58">外部模型服务（API 调用）</text>
+<text x="1122.00" y="1594.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">文本：千问 qwen-plus，可配置兼容接口</text>
+<text x="1122.00" y="1648.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">概念配图：图像生成 → 多模态审核（按需）</text>
+<text x="1122.00" y="1702.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">返回教学内容、结构化结果及适合概念的配图</text>
+<text x="1122.00" y="1756.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">程序控制教学进度，模型辅助生成与评阅</text>
+<rect x="2110" y="1478" width="810" height="344" rx="19" fill="#FAF8F3" stroke="#D6C8AF" stroke-width="2"/>
+<text x="2142.00" y="1536.56" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="37" font-weight="700" fill="#243B58">学习记录与运行支撑</text>
+<text x="2142.00" y="1594.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">浏览器：会话 / 笔记 / 当前会话画像</text>
+<text x="2142.00" y="1648.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">后端：账号 / 积分 / 练习状态</text>
+<text x="2142.00" y="1702.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">比赛访问：HTTPS → Cloudflare 隧道</text>
+<text x="2142.00" y="1756.40" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#263746">→ 演示网关 → 本机教学后端</text>
+<text x="75.00" y="1916.56" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="37" font-weight="700" fill="#243B58">典型运行流程</text>
+<rect x="70" y="1950" width="365" height="98" rx="16" fill="#EDF2F7" stroke="#CCD6E1" stroke-width="2"/>
+<text x="142.50" y="2006.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#243B58">01  提交学习问题</text>
+<polyline points="435,1999 478,1999" fill="none" stroke="#243B58" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="478.00,1999.00 461.00,1991.00 461.00,2007.00" fill="#243B58"/>
+<rect x="484" y="1950" width="365" height="98" rx="16" fill="#EDF2F7" stroke="#CCD6E1" stroke-width="2"/>
+<text x="542.50" y="2006.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#243B58">02  识别意图与阶段</text>
+<polyline points="849,1999 892,1999" fill="none" stroke="#243B58" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="892.00,1999.00 875.00,1991.00 875.00,2007.00" fill="#243B58"/>
+<rect x="898" y="1950" width="365" height="98" rx="16" fill="#EDF2F7" stroke="#CCD6E1" stroke-width="2"/>
+<text x="956.50" y="2006.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#243B58">03  选择专业智能体</text>
+<polyline points="1263,1999 1306,1999" fill="none" stroke="#243B58" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1306.00,1999.00 1289.00,1991.00 1289.00,2007.00" fill="#243B58"/>
+<rect x="1312" y="1950" width="365" height="98" rx="16" fill="#EDF2F7" stroke="#CCD6E1" stroke-width="2"/>
+<text x="1369.50" y="2006.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#243B58">04  检索 / 模型生成</text>
+<polyline points="1677,1999 1720,1999" fill="none" stroke="#243B58" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1720.00,1999.00 1703.00,1991.00 1703.00,2007.00" fill="#243B58"/>
+<rect x="1726" y="1950" width="365" height="98" rx="16" fill="#EDF2F7" stroke="#CCD6E1" stroke-width="2"/>
+<text x="1784.50" y="2006.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#243B58">05  校验并展示结果</text>
+<polyline points="2091,1999 2134,1999" fill="none" stroke="#243B58" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="2134.00,1999.00 2117.00,1991.00 2117.00,2007.00" fill="#243B58"/>
+<rect x="2140" y="1950" width="365" height="98" rx="16" fill="#EDF2F7" stroke="#CCD6E1" stroke-width="2"/>
+<text x="2198.50" y="2006.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#243B58">06  学生回答或练习</text>
+<polyline points="2505,1999 2548,1999" fill="none" stroke="#243B58" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="2548.00,1999.00 2531.00,1991.00 2531.00,2007.00" fill="#243B58"/>
+<rect x="2554" y="1950" width="365" height="98" rx="16" fill="#EDF2F7" stroke="#CCD6E1" stroke-width="2"/>
+<text x="2612.50" y="2006.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#243B58">07  复盘与继续学习</text>
+<text x="75.00" y="2107.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#617181">独立工作台可直接进入对应智能体；教材检索、概念配图和复盘按任务与训练阶段触发。</text>
+<polyline points="2080,2157 2205,2157" fill="none" stroke="#243B58" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="2205.00,2157.00 2188.00,2149.00 2188.00,2165.00" fill="#243B58"/>
+<text x="2222.00" y="2162.76" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#617181">请求 / 结果</text>
+<polyline points="2500,2157 2625,2157" fill="none" stroke="#A57B3F" stroke-width="3" stroke-linejoin="round" stroke-dasharray="12 10"/>
+<polygon points="2625.00,2157.00 2608.00,2149.00 2608.00,2165.00" fill="#A57B3F"/>
+<text x="2642.00" y="2162.76" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#617181">资源 / 服务支撑</text>
+<text x="75.00" y="2167.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#243B58">图 1  思辨学堂总体架构、输入输出与学习闭环</text>
+</svg>
